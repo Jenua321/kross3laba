@@ -40,6 +40,7 @@ session_start();
             $id = ($_GET['del']);
 
             mysqli_query($connect, "DELETE FROM `users` WHERE `users`.`id` = '$id'");
+
         }
      	  foreach ($info as $users) 
      	  {
@@ -62,6 +63,6 @@ session_start();
          </tr>
      </table>
      <br><th><a href="add.php">Добавить</a></th></br>
-     <br><th><a href="panel.php">Назад</a></th></br>
+     <br><th><a href="index.php">Выход</a></th></br>
 </body>
 </html>

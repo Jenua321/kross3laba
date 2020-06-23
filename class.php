@@ -10,18 +10,17 @@ class Admin  extends User
     public function Get()
     {
         if($_SESSION['NowLang'] == "ru") {
-            echo "Здравствуйте, Админ " . $this->name . " " . $this->surname . ". Вы можете на сайте изменять, удалять и создавать клиентов.";
-            echo '<a href="tableus.php">Админка</a>';
+            echo "Здравствуйте, Админ " . $this->name . " " . $this->surname . ". Вы можете на сайте изменять, делать все.";
+            echo '<a href="tableus.php">Просмотреть информацию</a>';
         }
         elseif ($_SESSION['NowLang'] == "ua"){
-            echo "Вітаю, Адмін ". $this->name . " " . $this->surname . ". Ви можете на сайті змінювати, видаляти і створювати клієнтів.";
-            echo '<a href="tableus.php">Админка</a>';
+            echo "Вітаю, Адмін ". $this->name . " " . $this->surname . ". Ви можете на сайті змінювати, робити все.";
+            echo '<a href="tableus.php">Надати інформацію</a>';
             
         }
         else{
-            echo "Hello, Admin " . $this->name . " " . $this->surname . ". You can modify, delete and create clients on the site.";
-            echo '<a href="tableus.php">Админка</a>'
-            ;
+            echo "Hello, Admin " . $this->name . " " . $this->surname . ". You can modify, to do everything.";
+            echo '<a href="tableus.php">Give information</a>';
         }
     }
 }
@@ -30,16 +29,16 @@ class Manager  extends User
     public function Get()
     {
         if ($_SESSION['NowLang'] == "ru") {
-            echo "Здравствуйте, Менеджер " . $this->name . " " . $this->surname . ". Вы можете на сайте изменять, удалять и создавать клиентов.";
-            echo '<a href="tableus.php">Managerka</a>';
+            echo "Здравствуйте, Менеджер " . $this->name . " " . $this->surname . ". Вы можете на сайте удалять и создавать клиентов.";
+            echo '<a href="tableus.php">Просмотреть информацию</a>';
             
         } elseif ($_SESSION['NowLang'] == "ua") {
-            echo "Вітаю, Менеджер " . $this->name . " " . $this->surname . ". Ви можете на сайті змінювати, видаляти і створювати клієнтів.";
-            echo '<a href="tableus.php">Managerka</a>';
+            echo "Вітаю, Менеджер " . $this->name . " " . $this->surname . ". Ви можете на сайті, видаляти і створювати клієнтів.";
+            echo '<a href="tableus.php">Надати інформацію</a>';
             
         } else {
-            echo "Hello, Manager " . $this->name . " " . $this->surname . ". You can modify, delete and create clients on the site.";
-            echo '<a href="tableus.php">Managerka</a>';
+            echo "Hello, Manager " . $this->name . " " . $this->surname . ". You can modify create clients on the site.";
+            echo '<a href="tableus.php">Give information</a>';
             
         }
     }

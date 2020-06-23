@@ -7,5 +7,6 @@ $Lang = array(
     "pass_lan"	=> "Password",
     "button_lan" => "Submit",
     "error" => "You entered an incorrect username or password",
+    "buton" => "Back",
 );
 ?>
