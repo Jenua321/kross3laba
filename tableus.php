@@ -53,8 +53,9 @@ session_start();
      		<td>'. $users[5] .'</td>
      		<td>'. $users[6] .'</td>
      		';
-     	  	if($_SESSION['role'] == 'admin') {
-                echo '<td>' . '<a href="">Edit</a>';
+     	  	if($_SESSION['role'] == 'admin') 
+     	  	{
+                echo '<td>' . '<a href="edit.php?id=<?$users[0]?>">Edit</a>';
                 echo '</td>'; ?>
                 <td><a href="tableus.php?del=<?= $users[0] ?>>">Dell</a></td> <?php
             }
